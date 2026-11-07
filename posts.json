@@ -419,6 +419,11 @@
       "SN": "X",
       "postURL": "https://x.com/FabrizioRomano/status/2118292484681855319",
       "category": "Sport"
+    },
+    {
+      "SN": "Mastodon",
+      "postURL": "https://mastodon.art/@MichaelWhelan/117575236548447655",
+      "category": "Art"
     }
   ]
 }
