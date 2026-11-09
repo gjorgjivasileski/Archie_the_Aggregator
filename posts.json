@@ -454,6 +454,11 @@
       "SN": "Bluesky",
       "postURL": "https://bsky.app/profile/davidimel.com/post/3mzr6mxrpxc2o",
       "category": "Art"
+    },
+    {
+      "SN": "Mastodon",
+      "postURL": "https://mastodon.social/@marijn/117585661710040819",
+      "category": "Satire"
     }
   ]
 }
