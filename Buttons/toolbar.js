@@ -25,26 +25,10 @@ mobile.addEventListener('change', () => {
   previousScroll = window.scrollY;
 });
 
-for (const link of document.querySelectorAll('.control-panel-button')) {
-  const isCurrentPage = link.getAttribute('aria-current') === 'page';
-  let clicked = false;
-
+// Clicking the current page keeps the panel in place; its icon is styled by CSS.
+for (const link of document.querySelectorAll('.control-panel-button[aria-current="page"]')) {
   link.addEventListener('click', event => {
     if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-    clicked = true;
-    if (isCurrentPage) event.preventDefault();
-    link.classList.toggle('tools-swapped');
+    event.preventDefault();
   });
-
-  if (isCurrentPage) {
-    // Replay on arrival so navigation does not cut off the swap from another page.
-    requestAnimationFrame(() => {
-      if (clicked) return;
-      const hammer = link.querySelector('.tool-hammer');
-      if (!hammer) return;
-      // Establish the starting position before applying the CSS transition.
-      void getComputedStyle(hammer).transform;
-      link.classList.add('tools-swapped');
-    });
-  }
 }

@@ -2,10 +2,10 @@ import { parsePosts, createCard, loadCard, disposeCard } from './embeds.js?v=pos
 import { createMasonry } from './layout.js?v=batches-20261013';
 import { enableGrabScroll } from './navigation.js';
 import { FILTER_STORAGE_KEY, readFilters, filterPosts } from './filters.js?v=controls-20261025';
+import { createFeedButtons } from './Buttons/feed-buttons.js?v=buttons-20261029';
 
 const feed = document.querySelector('#feed');
-const button = document.querySelector('#shuffle');
-const interactionButton = document.querySelector('#interact');
+const controls = createFeedButtons({ onInteract: setInteraction, onShuffle: shufflePosts });
 const message = document.querySelector('#feed-message');
 const announcement = document.querySelector('#shuffle-status');
 const quoteSection = document.querySelector('#quote');
@@ -82,8 +82,7 @@ function refreshFilters() {
   allPosts = filterPosts(sourcePosts, filters);
   unseenPosts = shuffledCopy(allPosts);
   showNextBatch();
-  button.disabled = allPosts.length < 2;
-  interactionButton.disabled = !cards.length;
+  controls.setAvailable(allPosts.length);
   message.hidden = false;
   if (!sourcePosts.length) {
     message.textContent = 'No posts yet. Add posts to the posts collection in posts.json.';
@@ -153,18 +152,16 @@ function updatePositions() {
   });
 }
 
-interactionButton.addEventListener('click', () => {
-  if (shuffling) return;
+function setInteraction(enabled) {
   stopGrab();
-  interactive = !interactive;
+  interactive = enabled;
   feed.dataset.interactive = String(interactive);
-  interactionButton.setAttribute('aria-pressed', String(interactive));
   cards.forEach(card => { card.element.querySelector('.card-surface').inert = !interactive; });
   document.querySelector('#interaction-hint').textContent = interactive
     ? 'Post interaction is on. Links and media are available.'
     : 'Enable “Interact with posts” in the toolbar to use post links and videos.';
   announcement.textContent = interactive ? 'Post interaction enabled.' : 'Post interaction disabled.';
-});
+}
 
 const pause = milliseconds => new Promise(resolve => setTimeout(resolve, milliseconds));
 
@@ -175,13 +172,11 @@ async function fade(hidden) {
   await pause(duration + 20);
 }
 
-button.addEventListener('click', async () => {
+async function shufflePosts() {
   if (shuffling || allPosts.length < 2) return;
   stopGrab();
   shuffling = true;
-  // aria-disabled keeps keyboard focus on the same button through the effect.
-  button.setAttribute('aria-disabled', 'true');
-  interactionButton.setAttribute('aria-disabled', 'true');
+  controls.setShuffling(true);
   feed.inert = true;
   feed.setAttribute('aria-busy', 'true');
   feed.style.minHeight = `${feed.getBoundingClientRect().height}px`;
@@ -198,12 +193,11 @@ button.addEventListener('click', async () => {
     feed.style.removeProperty('min-height');
     feed.inert = false;
     feed.setAttribute('aria-busy', 'false');
-    button.removeAttribute('aria-disabled');
-    interactionButton.removeAttribute('aria-disabled');
+    controls.setShuffling(false);
     shuffling = false;
     refreshFilters();
   }
-});
+}
 
 initQuotes();
 init();
