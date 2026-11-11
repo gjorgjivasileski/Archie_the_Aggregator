@@ -1,11 +1,13 @@
-import { CATEGORIES, FILTER_STORAGE_KEY, readFilters, saveFilters } from '../filters.js?v=controls-20261025';
+import { CATEGORIES, NETWORKS, FILTER_STORAGE_KEY, readFilters, saveFilters } from '../filters.js?v=controls-20261025';
 
 const buttons = [...document.querySelectorAll('[data-filter-group]')];
+const networkShortcuts = [...document.querySelectorAll('[data-network-selection]')];
 const categoryShortcuts = [...document.querySelectorAll('[data-category-selection]')];
 const status = document.querySelector('#filter-status');
 let filters = readFilters();
 
 function render(saved = true) {
+  networkShortcuts.forEach(button => { button.disabled = false; })
   categoryShortcuts.forEach(button => { button.disabled = false; });
   for (const button of buttons) {
     button.disabled = false;
@@ -17,6 +19,13 @@ function render(saved = true) {
   status.textContent = saved
     ? `${summary} ${categories && networks ? 'Selections are remembered in this browser.' : 'Select at least one of each to see posts.'}`
     : `${summary} Your browser couldn’t save these filters. Allow site storage to keep them when returning to the feed.`;
+}
+
+for (const button of networkShortcuts) {
+  button.addEventListener('click', () => {
+    filters.networks = button.dataset.networkSelection === 'all' ? [...NETWORKS] : [];
+    render(saveFilters(filters));
+  });
 }
 
 for (const button of categoryShortcuts) {
