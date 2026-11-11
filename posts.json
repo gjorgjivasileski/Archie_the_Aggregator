@@ -16,7 +16,28 @@
       "category": "Satire"
     },
     {
-      "SN": "Threads", "postURL":"https://www.threads.com/@g_art_space/post/Dfj0EVtmilk",
+      "SN": "Threads", 
+      "postURL":"https://www.threads.com/@g_art_space/post/Dfj0EVtmilk",
+      "category": "Art"
+    },
+    {
+      "SN": "X",
+      "postURL": "https://x.com/no_no_no_com/status/2120136336963518716",
+      "category": "Art"
+    },
+    {
+      "SN": "X",
+      "postURL": "https://x.com/BreakTheCurse7/status/2120177108093935740",
+      "category": "Art"
+    },
+    {
+      "SN": "X",
+      "postURL": "https://x.com/Fullcourtpass/status/2120159885467824213",
+      "category": "Sport"
+    },
+    {
+      "SN": "Threads", 
+      "postURL":"https://www.threads.com/@cowtownchad/post/DflNvnyFOSq",
       "category": "Art"
     },
     {
@@ -107,6 +128,16 @@
     {
       "SN": "Mastodon",
       "postURL": "https://mastodon.social/@donni/117533329303324900",
+      "category": "Satire"
+    },
+    {
+      "SN": "Mastodon",
+      "postURL": "https://discuss.systems/@ricci/117596363194082607",
+      "category": "Satire"
+    },
+    {
+      "SN": "Mastodon",
+      "postURL": "https://mastodon.social/@marijn/117597529132611072",
       "category": "Satire"
     },
     {
