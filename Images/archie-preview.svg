@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
   <title id="title">Archie — A different perspective</title>
-  <desc id="description">Archie's dark blue wordmark and glowing abstract cards. Posts worth keeping. A fresh view with every shuffle. aggregate.mk.</desc>
+  <desc id="description">Archie's dark blue wordmark beside a screenshot of native social posts in the Archie feed. Posts worth keeping. A fresh view with every shuffle. aggregate.mk.</desc>
   <!-- Editable source for the social preview. Export at 1200 × 630 as PNG. -->
   <defs>
     <radialGradient id="ambient" cx="82%" cy="46%" r="70%">
@@ -8,45 +8,19 @@
       <stop offset=".55" stop-color="#162e44" stop-opacity=".3"/>
       <stop offset="1" stop-color="#0d141d" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="card" x2=".7" y2="1">
-      <stop stop-color="#1b354a"/>
-      <stop offset="1" stop-color="#101e2b"/>
-    </linearGradient>
-    <linearGradient id="cardEdge" x2=".4" y2="1">
-      <stop stop-color="#7eaccd" stop-opacity=".8"/>
-      <stop offset="1" stop-color="#3f647e" stop-opacity=".25"/>
-    </linearGradient>
-    <linearGradient id="crystal" x2=".8" y2="1">
-      <stop stop-color="#c7edff" stop-opacity=".55"/>
-      <stop offset="1" stop-color="#4b99d3" stop-opacity=".08"/>
-    </linearGradient>
     <linearGradient id="wordmark" x2="0" y2="1">
       <stop stop-color="#c7d8e5"/>
       <stop offset="1" stop-color="#86a7be"/>
     </linearGradient>
-    <linearGradient id="wave" x2="1" y2="0">
-      <stop stop-color="#5c9fce" stop-opacity=".12"/>
-      <stop offset=".5" stop-color="#a6d9ff"/>
-      <stop offset="1" stop-color="#5c9fce" stop-opacity=".12"/>
-    </linearGradient>
-    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="10"/>
-    </filter>
-    <filter id="cardShadow" x="-30%" y="-30%" width="160%" height="180%">
-      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#02080e" flood-opacity=".65"/>
-    </filter>
     <filter id="insetType" x="-10%" y="-20%" width="120%" height="150%">
       <feDropShadow dx="0" dy="-2" stdDeviation="1" flood-color="#000" flood-opacity=".85"/>
       <feDropShadow dx="0" dy="1" stdDeviation=".3" flood-color="#d2eeff" flood-opacity=".25"/>
     </filter>
-    <clipPath id="waveCrop"><rect x="920" y="272" width="190" height="254" rx="18"/></clipPath>
+    <clipPath id="feedCrop"><rect x="600" y="50" width="550" height="530" rx="12"/></clipPath>
   </defs>
 
   <rect width="1200" height="630" fill="#0d141d"/>
   <rect width="1200" height="630" fill="url(#ambient)"/>
-  <path d="M697 55h423M697 571h423" stroke="#9ecdee" stroke-opacity=".1"/>
-  <path d="M685 55v516M1122 55v516" stroke="#9ecdee" stroke-opacity=".07"/>
-  <path d="M680 55h10m-5-5v10m432 511h10m-5-5v10" stroke="#88bbdd" stroke-opacity=".45"/>
 
   <g font-family="Liberation Sans, Arial, sans-serif">
     <text x="72" y="204" font-size="118" font-weight="700" letter-spacing="-8" fill="url(#wordmark)" filter="url(#insetType)">archie<tspan fill="#92c9ed">.</tspan></text>
@@ -59,49 +33,7 @@
     <text x="101" y="543" fill="#b9d0e2" font-size="21" letter-spacing="1">aggregate.mk</text>
   </g>
 
-  <!-- An abstract masonry arrangement: original shapes, no quoted social posts. -->
-  <rect x="704" y="119" width="192" height="217" rx="18" fill="none" stroke="#82c9ff" stroke-width="5" opacity=".23" filter="url(#softGlow)"/>
-  <g filter="url(#cardShadow)">
-    <rect x="704" y="119" width="192" height="217" rx="18" fill="url(#card)" stroke="#90c8ef" stroke-opacity=".8"/>
-    <rect x="920" y="80" width="190" height="168" rx="18" fill="url(#card)" stroke="url(#cardEdge)"/>
-    <rect x="704" y="360" width="192" height="166" rx="18" fill="url(#card)" stroke="url(#cardEdge)"/>
-    <rect x="920" y="272" width="190" height="254" rx="18" fill="url(#card)" stroke="url(#cardEdge)"/>
-  </g>
-
-  <!-- The crystal echoes the site's original shuffle icon. -->
-  <g transform="translate(744 168) scale(4)" stroke="#b3e0ff" stroke-width=".4" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M9 4H4v5m0-5 6 6M19 24h5v-5m0 5-6-6M4 19v5h5m-5 0 6-6M24 9V4h-5m5 0-6 6" fill="none" opacity=".72"/>
-    <path d="m14 5 5 9-5 9-5-9 5-9Z" fill="url(#crystal)"/>
-    <path d="M14 5v18m-5-9h10" opacity=".5"/>
-  </g>
-  <path d="M777 310h46" stroke="#5a839f" stroke-width="2" stroke-linecap="round"/>
-
-  <!-- Quotations, exploration, and new viewpoints represented without post content. -->
-  <g fill="#a6d9ff" opacity=".65">
-    <path d="M958 141c0-16 8-27 23-31v10c-8 3-12 8-12 16h14v24h-25v-19Z"/>
-    <path d="M993 141c0-16 8-27 23-31v10c-8 3-12 8-12 16h14v24h-25v-19Z"/>
-  </g>
-  <g stroke="#5c809a" stroke-width="3" stroke-linecap="round">
-    <path d="M957 193h116"/>
-    <path d="M957 209h79" opacity=".55"/>
-  </g>
-
-  <g transform="translate(800 443)">
-    <circle r="31" fill="#204663" stroke="#8bc5ed" stroke-opacity=".65"/>
-    <ellipse rx="66" ry="19" transform="rotate(-25)" fill="none" stroke="#a6d9ff" stroke-width="1.6" opacity=".75"/>
-    <circle cx="49" cy="-28" r="4" fill="#c0e9ff"/>
-    <path d="m-50-38 3 6 6 3-6 3-3 6-3-6-6-3 6-3Z" fill="#a6d9ff" opacity=".65"/>
-  </g>
-
-  <g clip-path="url(#waveCrop)">
-    <circle cx="1015" cy="355" r="41" fill="#2e5c7d" fill-opacity=".32"/>
-    <circle cx="1015" cy="355" r="22" fill="#669bc1" fill-opacity=".25" stroke="#96cbed" stroke-opacity=".6"/>
-    <g fill="none" stroke="url(#wave)" stroke-width="1.5">
-      <path d="M910 442c44-50 70 31 108-8s65-11 104-36"/>
-      <path d="M910 456c44-50 70 31 108-8s65-11 104-36" opacity=".8"/>
-      <path d="M910 470c44-50 70 31 108-8s65-11 104-36" opacity=".6"/>
-      <path d="M910 484c44-50 70 31 108-8s65-11 104-36" opacity=".4"/>
-    </g>
-    <path d="M953 302h25M1053 496h25" stroke="#7baacb" stroke-opacity=".4" stroke-linecap="round"/>
-  </g>
+  <!-- A real feed capture; keep the file beside this SVG when exporting. -->
+  <image href="archie-feed.png" x="600" y="50" width="550" height="530" preserveAspectRatio="xMidYMin meet" clip-path="url(#feedCrop)"/>
+  <rect x="600.5" y="50.5" width="549" height="529" rx="11.5" fill="none" stroke="#90c8ef" stroke-opacity=".4"/>
 </svg>
