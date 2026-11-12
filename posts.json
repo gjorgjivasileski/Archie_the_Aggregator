@@ -6,6 +6,11 @@
       "category": "IT"
     },
     {
+      "SN": "Bluesky",
+      "postURL": "https://bsky.app/profile/astrra.space/post/3n24ng7myls2b",
+      "category": "Satire"
+    },
+    {
       "SN": "Threads", 
       "postURL":"https://www.threads.com/@zenia/post/Dfm-V1UGsyK",
       "category": "Satire"
@@ -392,11 +397,6 @@
     },
     {
       "SN": "Threads",
-      "postURL": "https://www.threads.com/@ogswiftie18/post/DesPStIEYyF",
-      "category": "Satire"
-    },
-    {
-      "SN": "Threads",
       "postURL": "https://www.threads.com/@chatgptricks/post/DfOpYgPljDg",
       "category": "Satire"
     },
@@ -564,11 +564,6 @@
       "SN": "Mastodon",
       "postURL": "https://mstdn.social/@grickle/117587570754304532",
       "category": "Satire"
-    },
-    {
-      "SN": "Threads",
-      "postURL": "https://www.threads.com/@thecybersecurityhub/post/Dfg951_G4kR",
-      "category": "IT"
     },
     {
       "SN": "Bluesky",
