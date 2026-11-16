@@ -211,6 +211,16 @@
       "category": "Sport"
     },
     {
+      "SN": "X",
+      "postURL": "https://x.com/007/status/2122343950308540474",
+      "category": "Satire"
+    },
+    {
+      "SN": "Mastodon",
+      "postURL": "https://mastodon.social/@glyph/117627379825892267",
+      "category": "IT"
+    },
+    {
       "SN": "Mastodon",
       "postURL": "https://mas.to/@baldur@toot.cafe/117614252393313258",
       "category": "IT"
@@ -342,6 +352,11 @@
     },
     {
       "SN": "Bluesky",
+      "postURL": "https://bsky.app/profile/mjlegel.bsky.social/post/3n2gzwxr63k2y",
+      "category": "IT"
+    },
+    {
+      "SN": "Bluesky",
       "postURL": "https://bsky.app/profile/twonks.bsky.social/post/3n2bn5vctrc2j",
       "category": "Art"
     },
@@ -469,6 +484,11 @@
       "SN": "Threads",
       "postURL": "https://www.threads.com/@drcarolineleaf/post/DfQD9twDKTu",
       "category": "Satire"
+    },
+    {
+      "SN": "Threads",
+      "postURL": "https://www.threads.com/@willgreen_studio/post/Df0EKutDvqe",
+      "category": "Art"
     },
     {
       "SN": "Threads",
