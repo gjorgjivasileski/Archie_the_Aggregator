@@ -61,6 +61,11 @@
       "category": "Satire"
     },
     {
+      "SN": "Threads",
+      "postURL":"https://www.threads.com/@pepsi/post/DgDnD9xGkdc",
+      "category": "Satire"
+    },
+    {
       "SN": "Bluesky",
       "postURL": "https://bsky.app/profile/mackinnonart.bsky.social/post/3n25mzl6i3c2p",
       "category": "Art"
@@ -289,11 +294,6 @@
       "SN": "Mastodon",
       "postURL": "https://mastodon.social/@nixCraft/117529709526220676",
       "category": "IT"
-    },
-    {
-      "SN": "Mastodon",
-      "postURL": "https://mastodon.social/@donni/117533329303324900",
-      "category": "Satire"
     },
     {
       "SN": "Mastodon",
