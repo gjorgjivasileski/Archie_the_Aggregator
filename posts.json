@@ -101,8 +101,8 @@
       "category": "Sport"
     },
     {
-      "SN": "Threads",
-      "postURL": "https://www.threads.com/@tuhin.universe/post/DfmMofBjRUo",
+      "SN": "X",
+      "postURL": "https://x.com/carthurj/status/2124984010204172518",
       "category": "Satire"
     },
     {
@@ -796,7 +796,37 @@
     },
     {
       "SN": "Bluesky",
-      "postURL": "https://bsky.app/profile/bahome.bsky.social/post/3mztk4lgdvc2r",
+      "postURL": "https://bsky.app/profile/cjzero.bsky.social/post/3mzrr4n3nw22q",
+      "category": "Satire"
+    },
+    {
+      "SN": "Threads",
+      "postURL": "https://www.threads.com/@dada04210614/post/DgEW3UTClPR",
+      "category": "Satire"
+    },
+    {
+      "SN": "Threads",
+      "postURL": "https://www.threads.com/@techtiff.ai/post/DgF50uQkwt0",
+      "category": "Satire"
+    },
+    {
+      "SN": "Bluesky",
+      "postURL": "https://bsky.app/profile/novaquinn78.bsky.social/post/3n2yonmatcc25",
+      "category": "Satire"
+    },
+    {
+      "SN": "Bluesky",
+      "postURL": "https://bsky.app/profile/sneptech.bsky.social/post/3n2xtv33lvk2l",
+      "category": "Satire"
+    },
+    {
+      "SN": "X",
+      "postURL": "https://x.com/irynasofiah/status/2124936050577657991",
+      "category": "Satire"
+    },
+    {
+      "SN": "X",
+      "postURL": "https://x.com/jawestenberg/status/2124843175152091280",
       "category": "Satire"
     }
   ]
