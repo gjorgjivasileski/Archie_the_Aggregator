@@ -326,7 +326,13 @@
       "category": "Art"
     },
     {
-      "SN": "Mastodon", "postURL":"https://mastodon.social/@scalzi/117633898351957229",
+      "SN": "Mastodon",
+      "postURL": "https://mastodon.social/@csilverman/117693243858839272",
+      "category": "Art"
+    },
+    {
+      "SN": "Mastodon", 
+      "postURL":"https://mastodon.social/@scalzi/117633898351957229",
       "category": "Satire"
     },
     {
@@ -572,6 +578,11 @@
     {
       "SN": "Threads",
       "postURL": "https://www.threads.com/@tennischannel/post/DewogxPH0OG",
+      "category": "Sport"
+    },
+    {
+      "SN": "Threads",
+      "postURL": "https://www.threads.com/@giannis_an34/post/DgRaBGIm3Kc",
       "category": "Sport"
     },
     {
@@ -827,7 +838,12 @@
     {
       "SN": "Bluesky",
       "postURL": "https://bsky.app/profile/cjzero.bsky.social/post/3mzrr4n3nw22q",
-      "category": "Satire"
+      "category": "Sport"
+    },
+    {
+      "SN": "Bluesky",
+      "postURL": "https://bsky.app/profile/ultraluther.bsky.social/post/3n3doijpa3c2f",
+      "category": "Art"
     },
     {
       "SN": "Threads",
@@ -858,6 +874,16 @@
       "SN": "X",
       "postURL": "https://x.com/jawestenberg/status/2124843175152091280",
       "category": "Satire"
+    },
+    {
+      "SN": "X",
+      "postURL": "https://x.com/eddietree/status/2126398156732850474",
+      "category": "Art"
+    },
+    {
+      "SN": "X",
+      "postURL": "https://x.com/slymeria_23/status/2126583002256044198",
+      "category": "Art"
     }
   ]
 }
